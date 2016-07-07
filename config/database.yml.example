@@ -51,4 +51,4 @@ production:
   <<: *default
   database: MinhVuReal_production
   username: MinhVuReal
-  password: <%= ENV['MinhVuReal_DATABASE_PASSWORD'] %>
+  password: <%= ENV['MINHVUREAL_DATABASE_PASSWORD'] %>
