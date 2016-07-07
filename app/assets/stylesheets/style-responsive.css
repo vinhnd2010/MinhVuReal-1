@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+[Table of contents]
+1. Small desktop
+2. Tablet landskape
+3. Tablet Portrait
+4. Phone
+5. Small Phone
+6. Max Height 768
+-------------------------------------------------------------------*/
+
+
+/* ==============================
+   Small desktop
+============================== */
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+/* ==============================
+   Tablet landskape
+   ============================== */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+/* ==============================
+   Tablet Portrait
+   ============================== */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/* ==============================
+   Phone
+   ============================== */
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/* ==============================
+   Small Phone
+   ============================== */
+
+@media only screen and (max-width: 319px) {
+
+}
+
+/* ==============================
+   Max Height 768
+   ============================== */
+
+@media only screen and (max-height: 767px) {
+
+}
