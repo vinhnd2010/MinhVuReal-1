@@ -1,3 +1,119 @@
-@import "font-awesome";
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700&subset=latin,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,400italic&subset=latin,vietnamese);
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+/*--------------Variable-----------------*/ 
+$base-font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$base-font-size: 1em;
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$heading-font-family: $base-font-family;
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: #ED145B;
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+/*-------------Typography---------------*/
+body {
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;  
+  color: #333333;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+h1 { font-size: 2.00em; }
+h2 { font-size: 1.50em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.00em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.67em; }
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*--------------List-----------*/
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

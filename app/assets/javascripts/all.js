@@ -11,10 +11,6 @@
 
   $(document).ready(function(){
     $(window).trigger("resize");
-
-    $("a#mobile-menu").click(function(){
-      $(".mobile-menu").slideToggle("slow");
-    });
   });
 
   $(window).resize(function(){
@@ -58,14 +54,12 @@
     Menu classic
   --------------------------------------------- */
   function init_classic_menu_resize(){
-    if ($(window).width() <= 1024) {
+    if ($(window).width() <= 768) {
       $(".wrapper").addClass("mobile-on");
     }
     else
-      if ($(window).width() > 1024) {
+      if ($(window).width() > 768) {
         $(".wrapper").removeClass("mobile-on");
-        $(".mobile-menu").hide();
-        // desktop_nav.show();
       }
   }
 })(jQuery);
