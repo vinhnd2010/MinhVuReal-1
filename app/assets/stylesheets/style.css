@@ -1,0 +1,79 @@
+body {
+  border-top: 5px solid #D6D6D6;
+}
+.wrapper {
+  margin: 0 auto;
+}
+
+.site-branding {
+  background-position: left top;
+  background-repeat: repeat;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.site-branding .container { 
+  padding: 20px 0px 0px;
+  position: relative;
+  z-index: 9999;
+}
+
+.mobile-on .site-branding .navbar-nav { 
+  margin: 0px;
+}
+
+.navbar-header img {
+  vertical-align: text-bottom;
+  border-radius: 5%;
+}
+
+.site-branding .navbar-brand {
+  padding: 0px 15px;
+  height: 70px;
+}
+
+.mobile-on .navbar-collapse {
+  border-top: none;
+}
+
+.mobile-on ul.nav.navbar-nav li {
+  background: #F7F7F7;
+  color:#333333;
+  font-family: "Arial", sans-serif
+}
+
+ul.nav.navbar-nav li:after {
+  content: '';
+  position: absolute;
+  top: 1.9em;
+  right: 0;
+  height: 1.2em;
+  width: 1px;
+  background: #c8c2bd;
+}
+
+ul.nav.navbar-nav li:last-child:after {
+  content: none;
+}
+
+.mobile-on ul.nav.navbar-nav li:after {
+  content: none;
+}
+
+ul.nav.navbar-nav li a {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #998F86;
+  text-transform: uppercase;
+}
+
+ul.nav.navbar-nav li > a:focus, ul.nav.navbar-nav li > a:hover {
+  color: #ED145B;
+}
+
+ul.nav.navbar-nav li a.active {
+  color: #ED145B;
+}

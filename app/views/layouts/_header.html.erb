@@ -1,0 +1,24 @@
+<div class="navbar navbar-default site-branding" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to root_path, rel: "home", title: t("MVR"), class: "navbar-brand" do %>
+        <%= image_tag "logo", alt: "Cho thuê văn phòng" %>
+      <% end %>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-menubuilder">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Giới thiệu", root_path, class: "active" %></li>
+        <li><%= link_to "Tư vấn thuê văn phòng", "javascript:void(0)" %></li>
+        <li><%= link_to "Văn phòng cho thuê hà nội", "javascript:void(0)" %></li>
+        <li><%= link_to "Thông tin hữu ích", "javascript:void(0)" %></li>
+        <li><%= link_to "Video", "javascript:void(0)" %></li>
+      </ul>
+    </div>
+  </div>
+</div>
