@@ -14,13 +14,13 @@ body {
   border: none;
 }
 
-.site-branding .container { 
+.site-branding .container {
   padding: 20px 0px 0px;
   position: relative;
   z-index: 9999;
 }
 
-.mobile-on .site-branding .navbar-nav { 
+.mobile-on .site-branding .navbar-nav {
   margin: 0px;
 }
 
@@ -76,4 +76,49 @@ ul.nav.navbar-nav li > a:focus, ul.nav.navbar-nav li > a:hover {
 
 ul.nav.navbar-nav li a.active {
   color: #ED145B;
+}
+
+ul.list_cat {
+  border-bottom: 1px solid rgba(46,44,108,0.3);
+  margin-bottom: 1em;
+}
+
+.office-loop .item {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.office-loop .item .office-detail {
+  border: 1px solid #f0f0f0 !important;
+  padding: 8px;
+}
+
+.office-list .office-loop .item h3 {
+  color: #2E2C6C;
+  font-weight: 400;
+  margin-top: 1em;
+  font-size: 1em;
+  border-bottom: 1px solid #998F86;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.office-list .office-loop .item .info {
+  float: none;
+  width: 100%;
+}
+
+.office-list .office-loop .item .info span {
+  display: block;
+}
+
+.office-list .office-loop .item .info .address {
+  color: #575757;
+  font-size: 10px;
+}
+
+.main-content .description {
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
