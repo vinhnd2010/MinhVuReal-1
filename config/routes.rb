@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   get "about" => "static_pages#about"
   get "help" => "static_pages#help"
   get "district/show" => "districts#show"
-  resources :districts, only: [:index, :show]
+  resources :districts do
+    resources :towers
+  end
 end
