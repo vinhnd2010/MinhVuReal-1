@@ -11,16 +11,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div class="wrapper">
-    <div class="header">
-      <%= render "layouts/header" %>
-    </div>
-    <div class="main-contain">
-      <%= yield %>
-    </div>
-    <div class="footer">
-      <%= render "layouts/footer" %>
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left-col">
+        <%= render "layouts/manager_menu" %>
+      </div>
+      <div class="right_col" role="main">
+        <div>
+          <%= yield %>
+        </div>
+      </div>
     </div>
   </div>
   <%= javascript_include_tag "all", 'data-turbolinks-track' => true %>

@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap/dist/js/bootstrap
+//= require fastclick/lib/fastclick
+//= require nprogress/nprogress
+//= require validator/validator
+//= require custom.min

@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   resources :districts do
     resources :towers
   end
+
+  namespace :admin do
+    root "districts#index"
+    resources :distrcits
+    resources :posts
+    resources :towers
+  end
 end

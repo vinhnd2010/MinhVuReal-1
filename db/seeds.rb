@@ -1,5 +1,5 @@
 ["Ba Đình", "Cầu Giấy", "Đống Đa", "Hai Bà Trưng", "Hoàn Kiếm", "Tây Hồ",
-  "Thanh Xuân", "Từ Liêm", "VP. Quận khác"] do |name|
+  "Thanh Xuân", "Từ Liêm", "VP. Quận khác"].each do |name|
   description = Faker::Lorem.paragraph(8)
   District.create! name: name, description: description
 end
@@ -10,7 +10,7 @@ districts.each do |district|
   10.times do |n|
     name = Faker::Name.name
     short_description = Faker::Lorem.paragraphs(1)
-    position = Faker::Name.tile
+    position = Faker::Name.title
     num_floor = Faker::Lorem.sentence
     area = Faker::Lorem.sentence
     height_floor = Faker::Lorem.sentence
@@ -22,12 +22,12 @@ districts.each do |district|
     map = Faker::Lorem.sentence
 
     district.towers.create! name: name, short_description: short_description,
-      position: position, num_floor: num_floor, area: area, height_floor: height_floor,
+      position: position, num_floor: num_floor, area: area, floor_height: height_floor,
       parking: parking, evaluator: evaluator, air_condition: air_condition,
       open_time: open_time, price: price, map: map
   end
 end
 
 50.times do |n|
-  Post.create! name: Faker::Name.name, content: Faker::Lorem.paragraphs(5)
+  Post.create! title: Faker::Name.title, content: Faker::Lorem.paragraphs(5)
 end
